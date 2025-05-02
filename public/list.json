@@ -1,0 +1,195 @@
+[
+    {
+      "id": 1,
+      "name": "Story Book 1",
+      "title": "A thrilling adventure story.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 2,
+      "name": "Comedy Book 1",
+      "title": "Laugh-out-loud moments in this comedic journey.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 3,
+      "name": "Fantasy Book 1",
+      "title": "A magical world full of wonders.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 4,
+      "name": "Mystery Book 1",
+      "title": "Solve a gripping mystery with twists and turns.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 5,
+      "name": "Drama Book 1",
+      "title": "Emotional rollercoaster with deep characters.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 6,
+      "name": "Science Book 1",
+      "title": "Explore the wonders of science and technology.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 7,
+      "name": "Horror Book 1",
+      "title": "Dark and chilling tales that will haunt you.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 8,
+      "name": "Romance Book 1",
+      "title": "A love story with unexpected twists.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 9,
+      "name": "Adventure Book 1",
+      "title": "Epic quests and daring adventures await.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 10,
+      "name": "Historical Book 1",
+      "title": "Dive into a fascinating historical account.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 11,
+      "name": "Story Book 2",
+      "title": "An exciting tale of courage and wisdom.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 12,
+      "name": "Comedy Book 2",
+      "title": "Laugh-out-loud moments in this hilarious narrative.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 13,
+      "name": "Fantasy Book 2",
+      "title": "Discover a new world full of magic and mystery.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 14,
+      "name": "Mystery Book 2",
+      "title": "Solve dark mysteries with your detective skills.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 15,
+      "name": "Drama Book 2",
+      "title": "Heartfelt drama with complex characters.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 16,
+      "name": "Science Book 2",
+      "title": "An engaging look at the future of technology.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 17,
+      "name": "Horror Book 2",
+      "title": "Spine-chilling horror stories that will make you shiver.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 18,
+      "name": "Romance Book 2",
+      "title": "An unexpected love story with a heartfelt conclusion.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 19,
+      "name": "Adventure Book 2",
+      "title": "An exhilarating adventure with unexpected surprises.",
+      "price": 0,
+      "category": "free",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 20,
+      "name": "Historical Book 2",
+      "title": "A deep dive into an important historical event.",
+      "price": 13,
+      "category": "paid",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 21,
+      "name": "Story Book 3",
+      "title": "A tale of mystery and excitement.",
+      "price": 13,
+      "category": "paid",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+      "id": 22,
+      "name": "Historical Book 2",
+      "title": "A deep dive into an important historical event.",
+      "price": 13,
+      "category": "paid",
+      "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+    },
+    {
+        "id": 23,
+        "name": "Historical Book 2",
+        "title": "A deep dive into an important historical event.",
+        "price": 13,
+        "category": "paid",
+        "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+      },
+      {
+        "id": 24,
+        "name": "Historical Book 2",
+        "title": "A deep dive into an important historical event.",
+        "price": 13,
+        "category": "paid",
+        "image": "https://img.freepik.com/premium-vector/stack-books-with-cup-coffee-stack-books_1253202-17579.jpg?w=740"
+      }
+  ]
+  
