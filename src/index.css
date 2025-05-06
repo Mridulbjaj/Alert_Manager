@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* index.css or global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* or whatever your dark background is */
+  }

@@ -1,36 +1,17 @@
-import "./App.css";
-
-import { Route, Routes } from "react-router-dom";
-import Home from "./componenet/Home";
-import Category from "./componenet/Category/Category";
-import Product from "./componenet/Product/Product";
-import LoginContext from "./componenet/Context/LoginContext";
-import { useState } from "react";
-import Cart from "./componenet/Cart/Cart";
-import Signup from "./componenet/AuthComponent/Signup";
-
-function App() {
-  const [isLogin, setisLogin] = useState(null); 
-  
+// App.js
+import React from "react";
+import './index.css'; // tailwind should be here
+import { Routes, Route, Navigate } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import WorkflowDetailPage from "./pages/WorkFlowDetailPage";
+export default function App() {
   return (
-       
-    <> 
-    <LoginContext.Provider value={{isLogin,setisLogin}}> 
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/category" element={<Category/>}/>
-        <Route path="/Product" element={<Product/>}/>
-        <Route path="/cart" element={<Cart/>}/>
-        <Route path="/signup" element={<Signup/>}/>
-      </Routes>
-      </LoginContext.Provider> 
-    </>
-     
-
+    <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/workflow" element={<WorkflowDetailPage/>} />
+          {/* Add more routes as needed */}
     
-    
-      
+    </Routes>
   );
 }
 
-export default App
