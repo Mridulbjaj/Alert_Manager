@@ -1,0 +1,212 @@
+{
+    "agentDetectionInfo": {
+        "accountId": "2202822069622178056",
+        "accountName": "Indian Oil Corporation Limited",
+        "agentDetectionState": "install_to_dynamic",
+        "agentDomain": "WORKGROUP",
+        "agentIpV4": "10.1.1.12",
+        "agentIpV6": "fe80::6d05:92eb:dd99:975f",
+        "agentLastLoggedInUpn": null,
+        "agentLastLoggedInUserMail": null,
+        "agentLastLoggedInUserName": "cpadmin",
+        "agentMitigationMode": "protect",
+        "agentOsName": "Windows 10 Pro",
+        "agentOsRevision": "19045",
+        "agentRegisteredAt": "2025-04-28T08:13:21.174090Z",
+        "agentUuid": "e1228d666bdd4b44bd00300dfb99a108",
+        "agentVersion": "24.1.6.313",
+        "assetVersion": "313",
+        "cloudProviders": {
+            "Azure": {
+                "azureResourceGroup": "MANAGEMENT",
+                "cloudAccount": "caa3f8bc-c423-4237-b952-467dc4a5caef",
+                "cloudImage": "win10-22h2-pro-g2",
+                "cloudInstanceId": "ece4bce6-13ff-4861-b58c-fd4ddbbddee0",
+                "cloudInstanceSize": "Standard_D2s_v3",
+                "cloudLocation": "SouthIndia",
+                "cloudTags": [
+                    "chkp-lz-create-date:2025-04-21T14:45:21.6426966Z"
+                ]
+            }
+        },
+        "externalIp": "74.224.127.191",
+        "groupId": "2202822071174070618",
+        "groupName": "Default Group",
+        "siteId": "2202822071148904793",
+        "siteName": "Default site"
+    },
+    "agentRealtimeInfo": {
+        "accountId": "2202822069622178056",
+        "accountName": "Indian Oil Corporation Limited",
+        "activeThreats": 0,
+        "agentComputerName": "VR-Win-1",
+        "agentDecommissionedAt": null,
+        "agentDomain": "WORKGROUP",
+        "agentId": "2202841759827141153",
+        "agentInfected": false,
+        "agentIsActive": false,
+        "agentIsDecommissioned": false,
+        "agentMachineType": "desktop",
+        "agentMitigationMode": "protect",
+        "agentNetworkStatus": "connected",
+        "agentOsName": "Windows 10 Pro",
+        "agentOsRevision": "19045",
+        "agentOsType": "windows",
+        "agentUuid": "e1228d666bdd4b44bd00300dfb99a108",
+        "agentVersion": "24.1.6.313",
+        "groupId": "2202822071174070618",
+        "groupName": "Default Group",
+        "networkInterfaces": [
+            {
+                "id": "2202841759843918371",
+                "inet": [
+                    "10.1.1.12"
+                ],
+                "inet6": [
+                    "fe80::6d05:92eb:dd99:975f"
+                ],
+                "name": "Ethernet",
+                "physical": "00:0d:3a:c9:b5:15"
+            }
+        ],
+        "operationalState": "na",
+        "rebootRequired": false,
+        "scanAbortedAt": null,
+        "scanFinishedAt": "2025-04-28T09:07:25.411511Z",
+        "scanStartedAt": "2025-04-28T08:16:27.569205Z",
+        "scanStatus": "finished",
+        "siteId": "2202822071148904793",
+        "siteName": "Default site",
+        "storageName": null,
+        "storageType": null,
+        "userActionsNeeded": []
+    },
+    "containerInfo": {
+        "id": null,
+        "image": null,
+        "isContainerQuarantine": null,
+        "labels": null,
+        "name": null
+    },
+    "ecsInfo": {
+        "clusterName": null,
+        "serviceArn": null,
+        "serviceName": null,
+        "taskArn": null,
+        "taskAvailabilityZone": null,
+        "taskDefinitionArn": null,
+        "taskDefinitionFamily": null,
+        "taskDefinitionRevision": null,
+        "type": null,
+        "version": null
+    },
+    "id": "2203627050362557565",
+    "indicators": [],
+    "kubernetesInfo": {
+        "cluster": null,
+        "controllerKind": null,
+        "controllerLabels": null,
+        "controllerName": null,
+        "isContainerQuarantine": null,
+        "namespace": null,
+        "namespaceLabels": null,
+        "node": null,
+        "nodeLabels": null,
+        "pod": null,
+        "podLabels": null
+    },
+    "mitigationStatus": [
+        {
+            "action": "quarantine",
+            "actionsCounters": {
+                "failed": 0,
+                "notFound": 0,
+                "pendingReboot": 0,
+                "success": 1,
+                "total": 1
+            },
+            "agentSupportsReport": true,
+            "groupNotFound": false,
+            "lastUpdate": "2025-04-29T10:13:35.688293Z",
+            "latestReport": "/threats/mitigation-report/2203627055227951124",
+            "mitigationEndedAt": "2025-04-29T10:13:35.069000Z",
+            "mitigationStartedAt": "2025-04-29T10:13:35.069000Z",
+            "reportId": "2203627055227951124",
+            "status": "success"
+        },
+        {
+            "action": "kill",
+            "actionsCounters": null,
+            "agentSupportsReport": true,
+            "groupNotFound": false,
+            "lastUpdate": "2025-04-29T10:13:35.415562Z",
+            "latestReport": null,
+            "mitigationEndedAt": "2025-04-29T10:13:35.404165Z",
+            "mitigationStartedAt": "2025-04-29T10:13:35.404164Z",
+            "reportId": "2203627052937860532",
+            "status": "success"
+        }
+    ],
+    "threatInfo": {
+        "analystVerdict": "true_positive",
+        "analystVerdictDescription": "True positive",
+        "automaticallyResolved": false,
+        "browserType": null,
+        "certificateId": "",
+        "classification": "Malware",
+        "classificationSource": "Engine",
+        "cloudFilesHashVerdict": "black",
+        "collectionId": "2202848875918128715",
+        "confidenceLevel": "malicious",
+        "createdAt": "2025-04-29T10:13:35.107314Z",
+        "detectionEngines": [
+            {
+                "key": "sentinelone_cloud",
+                "title": "SentinelOne Cloud"
+            }
+        ],
+        "detectionType": "static",
+        "engines": [
+            "SentinelOne Cloud"
+        ],
+        "externalTicketExists": false,
+        "externalTicketId": null,
+        "failedActions": false,
+        "fileExtension": "",
+        "fileExtensionType": "None",
+        "filePath": "\\Device\\HarddiskVolume4\\Users\\cpadmin\\Desktop\\File51",
+        "fileSize": 1252513,
+        "fileVerificationType": "NotSigned",
+        "identifiedAt": "2025-04-29T10:13:34.990000Z",
+        "incidentStatus": "resolved",
+        "incidentStatusDescription": "Resolved",
+        "initiatedBy": "agent_policy",
+        "initiatedByDescription": "Agent Policy",
+        "initiatingUserId": null,
+        "initiatingUsername": null,
+        "isFileless": false,
+        "isValidCertificate": false,
+        "macroModules": null,
+        "maliciousProcessArguments": null,
+        "md5": null,
+        "mitigatedPreemptively": false,
+        "mitigationStatus": "mitigated",
+        "mitigationStatusDescription": "Mitigated",
+        "originatorProcess": "explorer.exe",
+        "pendingActions": false,
+        "processUser": "VR-Win-1\\cpadmin",
+        "publisherName": "",
+        "reachedEventsLimit": false,
+        "rebootRequired": false,
+        "rootProcessUpn": null,
+        "sha1": "8a548ec55ece112cee0ed5cc2258a8cdfe513b9c",
+        "sha256": "42fb6545ba0bebe3b923e0a0e8b12f7559b987e769faea10c3640864318b12ad",
+        "storyline": "54DA2C693491DE47",
+        "threatId": "2203627050362557565",
+        "threatName": "File51",
+        "updatedAt": "2025-05-03T19:36:07.766184Z"
+    },
+    "whiteningOptions": [
+        "hash"
+    ]
+}

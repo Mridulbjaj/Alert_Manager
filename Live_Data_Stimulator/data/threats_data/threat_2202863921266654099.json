@@ -1,0 +1,365 @@
+{
+    "agentDetectionInfo": {
+        "accountId": "2202822069622178056",
+        "accountName": "Indian Oil Corporation Limited",
+        "agentDetectionState": "install_to_dynamic",
+        "agentDomain": "WORKGROUP",
+        "agentIpV4": "10.1.1.12",
+        "agentIpV6": "fe80::6d05:92eb:dd99:975f",
+        "agentLastLoggedInUpn": null,
+        "agentLastLoggedInUserMail": null,
+        "agentLastLoggedInUserName": "cpadmin",
+        "agentMitigationMode": "protect",
+        "agentOsName": "Windows 10 Pro",
+        "agentOsRevision": "19045",
+        "agentRegisteredAt": "2025-04-28T08:13:21.174090Z",
+        "agentUuid": "e1228d666bdd4b44bd00300dfb99a108",
+        "agentVersion": "24.1.6.313",
+        "assetVersion": "313",
+        "cloudProviders": {
+            "Azure": {
+                "azureResourceGroup": "MANAGEMENT",
+                "cloudAccount": "caa3f8bc-c423-4237-b952-467dc4a5caef",
+                "cloudImage": "win10-22h2-pro-g2",
+                "cloudInstanceId": "ece4bce6-13ff-4861-b58c-fd4ddbbddee0",
+                "cloudInstanceSize": "Standard_D2s_v3",
+                "cloudLocation": "SouthIndia",
+                "cloudTags": [
+                    "chkp-lz-create-date:2025-04-21T14:45:21.6426966Z"
+                ]
+            }
+        },
+        "externalIp": "74.224.127.191",
+        "groupId": "2202822071174070618",
+        "groupName": "Default Group",
+        "siteId": "2202822071148904793",
+        "siteName": "Default site"
+    },
+    "agentRealtimeInfo": {
+        "accountId": "2202822069622178056",
+        "accountName": "Indian Oil Corporation Limited",
+        "activeThreats": 0,
+        "agentComputerName": "VR-Win-1",
+        "agentDecommissionedAt": null,
+        "agentDomain": "WORKGROUP",
+        "agentId": "2202841759827141153",
+        "agentInfected": false,
+        "agentIsActive": false,
+        "agentIsDecommissioned": false,
+        "agentMachineType": "desktop",
+        "agentMitigationMode": "protect",
+        "agentNetworkStatus": "connected",
+        "agentOsName": "Windows 10 Pro",
+        "agentOsRevision": "19045",
+        "agentOsType": "windows",
+        "agentUuid": "e1228d666bdd4b44bd00300dfb99a108",
+        "agentVersion": "24.1.6.313",
+        "groupId": "2202822071174070618",
+        "groupName": "Default Group",
+        "networkInterfaces": [
+            {
+                "id": "2202841759843918371",
+                "inet": [
+                    "10.1.1.12"
+                ],
+                "inet6": [
+                    "fe80::6d05:92eb:dd99:975f"
+                ],
+                "name": "Ethernet",
+                "physical": "00:0d:3a:c9:b5:15"
+            }
+        ],
+        "operationalState": "na",
+        "rebootRequired": false,
+        "scanAbortedAt": null,
+        "scanFinishedAt": "2025-04-28T09:07:25.411511Z",
+        "scanStartedAt": "2025-04-28T08:16:27.569205Z",
+        "scanStatus": "finished",
+        "siteId": "2202822071148904793",
+        "siteName": "Default site",
+        "storageName": null,
+        "storageType": null,
+        "userActionsNeeded": []
+    },
+    "containerInfo": {
+        "id": null,
+        "image": null,
+        "isContainerQuarantine": null,
+        "labels": null,
+        "name": null
+    },
+    "ecsInfo": {
+        "clusterName": null,
+        "serviceArn": null,
+        "serviceName": null,
+        "taskArn": null,
+        "taskAvailabilityZone": null,
+        "taskDefinitionArn": null,
+        "taskDefinitionFamily": null,
+        "taskDefinitionRevision": null,
+        "type": null,
+        "version": null
+    },
+    "id": "2202863921266654099",
+    "indicators": [
+        {
+            "category": "Infostealer",
+            "description": "This uses mimikatz, an open-source application that shows and saves credentials",
+            "ids": [
+                38
+            ],
+            "tactics": []
+        },
+        {
+            "category": "General",
+            "description": "This binary imports functions used to raise kernel exceptions",
+            "ids": [
+                24
+            ],
+            "tactics": []
+        },
+        {
+            "category": "Hiding/Stealthiness",
+            "description": "This is a non-Microsoft binary that masquerades as a Microsoft executable",
+            "ids": [
+                10
+            ],
+            "tactics": []
+        },
+        {
+            "category": "General",
+            "description": "This binary imports debugger functions",
+            "ids": [
+                6
+            ],
+            "tactics": []
+        },
+        {
+            "category": "General",
+            "description": "This binary creates a System Service",
+            "ids": [
+                5
+            ],
+            "tactics": []
+        },
+        {
+            "category": "Persistence",
+            "description": "File can persist through Run registry key",
+            "ids": [
+                1952
+            ],
+            "tactics": [
+                {
+                    "name": "Persistence",
+                    "source": "MITRE",
+                    "techniques": [
+                        {
+                            "link": "https://attack.mitre.org/techniques/T1547/001",
+                            "name": "T1547.001"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Command and Control",
+            "description": "File can connect to a network resource",
+            "ids": [
+                1789
+            ],
+            "tactics": []
+        },
+        {
+            "category": "Exploitation",
+            "description": "File can write to the memory of other processes",
+            "ids": [
+                1755
+            ],
+            "tactics": [
+                {
+                    "name": "Defense Evasion",
+                    "source": "MITRE",
+                    "techniques": [
+                        {
+                            "link": "https://attack.mitre.org/techniques/T1055",
+                            "name": "T1055"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Defense Evasion",
+            "description": "File can manipulate console buffer",
+            "ids": [
+                1640
+            ],
+            "tactics": []
+        },
+        {
+            "category": "Execution",
+            "description": "File can compress data through WinAPI",
+            "ids": [
+                1598
+            ],
+            "tactics": [
+                {
+                    "name": "Collection",
+                    "source": "MITRE",
+                    "techniques": [
+                        {
+                            "link": "https://attack.mitre.org/techniques/T1560/002",
+                            "name": "T1560.002"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Discovery",
+            "description": "File can get domain trust relationships",
+            "ids": [
+                1542
+            ],
+            "tactics": [
+                {
+                    "name": "Discovery",
+                    "source": "MITRE",
+                    "techniques": [
+                        {
+                            "link": "https://attack.mitre.org/techniques/T1482",
+                            "name": "T1482"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Collection",
+            "description": "File can collect login information from Chrome-based browsers",
+            "ids": [
+                1485
+            ],
+            "tactics": [
+                {
+                    "name": "Credential Access",
+                    "source": "MITRE",
+                    "techniques": [
+                        {
+                            "link": "https://attack.mitre.org/techniques/T1555/003",
+                            "name": "T1555.003"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "kubernetesInfo": {
+        "cluster": null,
+        "controllerKind": null,
+        "controllerLabels": null,
+        "controllerName": null,
+        "isContainerQuarantine": null,
+        "namespace": null,
+        "namespaceLabels": null,
+        "node": null,
+        "nodeLabels": null,
+        "pod": null,
+        "podLabels": null
+    },
+    "mitigationStatus": [
+        {
+            "action": "quarantine",
+            "actionsCounters": {
+                "failed": 0,
+                "notFound": 0,
+                "pendingReboot": 0,
+                "success": 1,
+                "total": 1
+            },
+            "agentSupportsReport": true,
+            "groupNotFound": false,
+            "lastUpdate": "2025-04-28T08:57:23.467763Z",
+            "latestReport": "/threats/mitigation-report/2202863924932476049",
+            "mitigationEndedAt": "2025-04-28T08:57:21.455000Z",
+            "mitigationStartedAt": "2025-04-28T08:57:21.455000Z",
+            "reportId": "2202863924932476049",
+            "status": "success"
+        },
+        {
+            "action": "kill",
+            "actionsCounters": null,
+            "agentSupportsReport": true,
+            "groupNotFound": false,
+            "lastUpdate": "2025-04-28T08:57:23.375038Z",
+            "latestReport": null,
+            "mitigationEndedAt": "2025-04-28T08:57:23.356995Z",
+            "mitigationStartedAt": "2025-04-28T08:57:23.356994Z",
+            "reportId": "2202863924152335417",
+            "status": "success"
+        }
+    ],
+    "threatInfo": {
+        "analystVerdict": "true_positive",
+        "analystVerdictDescription": "True positive",
+        "automaticallyResolved": false,
+        "browserType": null,
+        "certificateId": "",
+        "classification": "Malware",
+        "classificationSource": "Static",
+        "cloudFilesHashVerdict": "black",
+        "collectionId": "2202863921384094617",
+        "confidenceLevel": "malicious",
+        "createdAt": "2025-04-28T08:57:23.029318Z",
+        "detectionEngines": [
+            {
+                "key": "pre_execution",
+                "title": "On-Write Static AI"
+            }
+        ],
+        "detectionType": "static",
+        "engines": [
+            "On-Write DFI"
+        ],
+        "externalTicketExists": false,
+        "externalTicketId": null,
+        "failedActions": false,
+        "fileExtension": "",
+        "fileExtensionType": "None",
+        "filePath": "\\Device\\HarddiskVolume4\\Users\\cpadmin\\Desktop\\efdc7070de6d3dad6bf188c949d6986cff3ad2cfda6048a169146d992cd9b4a7",
+        "fileSize": 1446912,
+        "fileVerificationType": "NotSigned",
+        "identifiedAt": "2025-04-28T08:57:21.408000Z",
+        "incidentStatus": "resolved",
+        "incidentStatusDescription": "Resolved",
+        "initiatedBy": "agent_policy",
+        "initiatedByDescription": "Agent Policy",
+        "initiatingUserId": null,
+        "initiatingUsername": null,
+        "isFileless": false,
+        "isValidCertificate": false,
+        "macroModules": null,
+        "maliciousProcessArguments": null,
+        "md5": null,
+        "mitigatedPreemptively": false,
+        "mitigationStatus": "mitigated",
+        "mitigationStatusDescription": "Mitigated",
+        "originatorProcess": "explorer.exe",
+        "pendingActions": false,
+        "processUser": "VR-Win-1\\cpadmin",
+        "publisherName": "",
+        "reachedEventsLimit": false,
+        "rebootRequired": false,
+        "rootProcessUpn": null,
+        "sha1": "2011eaf5dfadabd8886240e55fbdbb595f6fb68c",
+        "sha256": "efdc7070de6d3dad6bf188c949d6986cff3ad2cfda6048a169146d992cd9b4a7",
+        "storyline": "B4552C693491DE47",
+        "threatId": "2202863921266654099",
+        "threatName": "efdc7070de6d3dad6bf188c949d6986cff3ad2cfda6048a169146d992cd9b4a7",
+        "updatedAt": "2025-05-03T19:37:06.733381Z"
+    },
+    "whiteningOptions": [
+        "path",
+        "hash"
+    ]
+}
