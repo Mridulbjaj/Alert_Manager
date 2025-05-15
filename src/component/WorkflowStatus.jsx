@@ -1,38 +1,6 @@
-// components/WorkflowStatus.js
-import React from "react";
-import axios from "axios";
-import { useState } from "react";
 
-export default function WorkflowStatus() {
-  const [alerts, setAlerts] = useState([]);
-  const [status, setStatus] = useState('Connecting...');
-
-  const handleStartWorkflow = () => {
-    const eventSource = new EventSource('http://localhost:8000/api/fetchalert');
-
-    eventSource.onmessage = (event) => {
-      const data = JSON.parse(event.data);
-
-      if (data.message === 'All alerts processed' || data.message === 'No unresolved alerts found') {
-        setStatus(data.message);
-        eventSource.close();
-        return;
-      }
-
-      setAlerts(prev => [...prev, data]);
-    };
-
-    eventSource.onerror = (err) => {
-      console.error('EventSource failed:', err);
-      setStatus('Connection error');
-      eventSource.close();
-    };
-
-    return () => {
-      eventSource.close(); // clean up on unmount
-    };
-  };
-
+export default function WorkflowStatus({alerts, onStart, statusText, progress}) {
+  
   return (
     <div className="bg-[#111] rounded-lg p-6 border border-gray-800">
       <h3 className="text-lg font-semibold mb-2">Workflow Status</h3>
@@ -40,15 +8,18 @@ export default function WorkflowStatus() {
 
       <div className="mb-2">
         <span className="text-sm text-gray-400">Current Progress</span>
-        <span className="float-right text-sm text-gray-400">0%</span>
+        <span className="float-right text-sm text-gray-400">{Math.ceil(progress)}%</span>
       </div>
-      <div className="w-full h-2 bg-gray-800 rounded-full mb-4">
-        <div className="h-2 bg-blue-500 rounded-full w-0"></div>
+      <div className="w-full bg-gray-300 rounded h-6 overflow-hidden">
+        <div 
+          className="bg-green-500 h-full transition-all duration-700 ease-in-out"
+          style={{ width: `${progress}%` }}
+        />
       </div>
 
       <div className="mb-4">
         <span className="text-sm text-gray-400">Current Step</span>
-        <p className="text-white">Not started</p>
+        <p className="mt-2 text-gray-700 font-medium">{statusText}</p>
       </div>
 
       <div className="mb-4">
@@ -71,7 +42,7 @@ export default function WorkflowStatus() {
 
 
 
-      <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded" onClick={handleStartWorkflow}>
+      <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded" onClick={onStart}>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
         </svg>

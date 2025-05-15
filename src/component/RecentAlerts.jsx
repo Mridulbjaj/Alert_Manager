@@ -1,58 +1,67 @@
-// components/RecentAlerts.js
-import React from "react";
+const statusColors = {
+  true: 'bg-yellow-100 text-yellow-600',
+  false: 'bg-blue-100 text-blue-600',
+};
 
-const alerts = [
-  {
-    id: 1,
-    type: "Malware Detection",
-    description: "Suspicious file detected on endpoint-01",
-    time: "2 mins ago",
-    severity: "High",
-  },
-  {
-    id: 2,
-    type: "Unauthorized Access",
-    description: "Login attempt from unknown IP",
-    time: "15 mins ago",
-    severity: "Medium",
-  },
-  {
-    id: 3,
-    type: "Phishing Attempt",
-    description: "Suspicious email flagged by spam filter",
-    time: "30 mins ago",
-    severity: "Low",
-  },
-];
+const confidenceColors = {
+  malicious: 'bg-red-100 text-red-600',
+  Medium: 'bg-yellow-100 text-yellow-700',
+};
 
-export default function RecentAlerts() {
+const verdictColors = {
+  "false positive": 'bg-red-100 text-red-600',
+  "true positive": 'bg-green-100 text-green-600',
+  "Pending": 'text-gray-400',
+};
+
+const ThreatTable = ({recentAlerts}) => {
   return (
-    <div className="bg-[#111] rounded-lg p-4 border border-gray-800">
-      <h3 className="text-lg font-semibold mb-3">Recent Alerts</h3>
-      <ul className="divide-y divide-gray-800">
-        {alerts.map((alert) => (
-          <li key={alert.id} className="py-2">
-            <div className="flex justify-between items-center">
-              <div>
-                <p className="text-sm font-semibold text-white">{alert.type}</p>
-                <p className="text-xs text-gray-400">{alert.description}</p>
-              </div>
-              <div className="text-right">
-                <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                  alert.severity === "High"
-                    ? "bg-red-600 text-white"
-                    : alert.severity === "Medium"
-                    ? "bg-yellow-500 text-black"
-                    : "bg-green-600 text-white"
-                }`}>
-                  {alert.severity}
+    recentAlerts.length===0?
+    <div className="flex justify-center items-center h-full">
+      <p className="text-gray-400">No recent alerts available.</p>
+    </div>
+    : 
+    <div className="max-w-full overflow-auto px-4 py-4">
+      <table className="min-w-full bg-[#1f1f1f] text-white rounded-lg overflow-hidden">
+        <thead>
+          <tr className="text-left text-gray-400 border-b border-gray-700">
+            <th className="py-3 px-4">Threat</th>
+            <th className="py-3 px-4">Status</th>
+            <th className="py-3 px-4">Agent</th>
+            <th className="py-3 px-4">Confidence</th>
+            <th className="py-3 px-4">Verdict</th>
+          </tr>
+        </thead>
+        <tbody>
+          {recentAlerts.map((row, idx) => (
+            <tr key={idx} className="border-b border-gray-800 hover:bg-gray-800">
+              <td className="py-3 px-4 font-semibold">{row.threatName}</td>
+              <td className="py-3 px-4">
+                <span className={`px-3 py-1 rounded-full text-sm font-medium inline-block ${statusColors[row.processed] || ''}`}>
+                  {row.processed? 'Processed' : 'New'}
                 </span>
-                <p className="text-xs text-gray-500 mt-1">{alert.time}</p>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
+              </td>
+              <td className="py-3 px-4">{row.computerName}</td>
+              <td className="py-3 px-4">
+                <span className={`px-3 py-1 rounded-full text-sm font-medium inline-block ${confidenceColors[row.confidenceLevel] || ''}`}>
+                  {row.confidenceLevel}
+                </span>
+              </td>
+              <td className="py-3 px-4">
+                {row.Agent_Verdict === "Pending" ? (
+                  <span className="text-sm font-medium text-gray-400">Pending</span>
+                ) : (
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium inline-block ${verdictColors[row.Agent_Verdict] || ''}`}>
+                    {row.Agent_Verdict}
+                  </span>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
-}
+};
+
+export default ThreatTable;

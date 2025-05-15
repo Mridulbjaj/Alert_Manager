@@ -1,27 +1,23 @@
-import React from "react";
 
+export default function StatsCards({totalAlerts, processedAlerts}) {
 const stats = [
   {
     title: "Total Alerts",
-    value: "24",
-    subtitle: "+12 from last week",
+    value: totalAlerts,
     icon: "\u21bb"
   },
   {
     title: "Processed",
-    value: "18",
-    subtitle: "75% of total alerts",
+    value: processedAlerts,
     icon: "\u2713"
   },
   {
     title: "Pending",
-    value: "6",
-    subtitle: "25% of total alerts",
+    value: totalAlerts-processedAlerts,
     icon: "\u23F0"
   }
 ];
 
-export default function StatsCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {stats.map((stat, idx) => (

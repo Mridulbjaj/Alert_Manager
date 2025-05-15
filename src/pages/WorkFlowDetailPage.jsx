@@ -3,7 +3,6 @@ import HeaderSection from '../component/HeaderSection';
 import Navbar from '../component/Navbar';
 import WorkflowSteps from '../component/WorkflowSteps';
 import WorkflowLogs from '../component/WorkflowLogs';
-import StartWorkflowButton from '../component/StartWorkflowButton';
 
 export default function WorkflowDetailPage() {
     return (
@@ -12,12 +11,10 @@ export default function WorkflowDetailPage() {
             <div className="p-8 text-white">
                 <HeaderSection />
                 <div className="mt-8 border border-white p-4 rounded-md bg-[#1a1a1a]">
-      
                     <WorkflowSteps />
-                    <WorkflowLogs />
                 </div>
 
-                <StartWorkflowButton />
+                    <WorkflowLogs />
             </div>
         </div>
     );
