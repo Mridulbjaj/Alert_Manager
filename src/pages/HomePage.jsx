@@ -12,7 +12,7 @@ export default function HomePage() {
   const [processedAlerts, setProcessedAlerts] = useState(0);
   const [statusText, setStatusText] = useState('Not Started Yet!')
   const handleStartWorkflow = () => {
-    const eventSource = new EventSource('http://localhost:8000/api/fetchalert');
+    const eventSource = new EventSource('https://alert-o417.onrender.com/api/fetchalert');
 
     eventSource.onmessage = (event) => {
       const data = JSON.parse(event.data);
