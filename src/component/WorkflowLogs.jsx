@@ -5,7 +5,7 @@ export default function WorkflowLogs() {
   const [status, setStatus] = useState('No Logs Yet');
 
   const handleStartWorkflow = () => {
-    const eventSource = new EventSource('http://localhost:8000/api/fetchalert');
+    const eventSource = new EventSource('https://alert-o417.onrender.com/api/fetchalert');
 
     eventSource.onmessage = (event) => {
       const data = JSON.parse(event.data);
